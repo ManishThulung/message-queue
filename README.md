@@ -1,10 +1,10 @@
 This is a minimal implementation of Message Queue using RabbitMQ in Microservice Architecture.
 
-## Getting Started
+# Getting Started
 
 There are two folders `auth-api` and `email/api`
 
-# 1. First, go the the `auth-api` folder then:
+## 1. First, go the the `auth-api` folder then:
 
 Setup the .env variables.
 
@@ -27,7 +27,7 @@ The server runs on the [http://localhost:8080](http://localhost:8080).
 
 When you hit the `login` POST route it will publish the message to the queue called ``email-queue``.
 
-# 2. Seconf, go the the `email-api` folder then:
+## 2. Second, go the the `email-api` folder then:
 
 Setup the .env variables.
 
