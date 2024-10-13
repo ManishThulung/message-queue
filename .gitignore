@@ -1,0 +1,4 @@
+auth-api/node_modules
+email-api/node_modules
+auth-api/.env
+email-api/.env
