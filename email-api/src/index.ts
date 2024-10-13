@@ -27,6 +27,8 @@ async function connectToRabbitMQ() {
 connectToRabbitMQ().then(() => {
   channel.consume("email-queue", async (data) => {
     const { payload } = JSON.parse(data.content);
+    // message fetched from the queue
+    console.log(payload, "payload message")
     await mailSender(payload);
     channel.ack(data); // rabbitMQ deletes the message only ofter receiveing this ack
     console.log("DONE");
